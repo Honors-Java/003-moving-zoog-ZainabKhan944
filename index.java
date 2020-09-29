@@ -14,14 +14,14 @@ void draw() {
   rectMode(CENTER);
   // Draw Zoog's body
   stroke(0);
-  fill(150);
+  fill(mouseX, mouseY, 0);
   rect(mouseX, mouseY,20,100); 
   // Draw Zoog's head
   stroke(0);
-  fill(255);
+  fill(0, mouseX, mouseY);
   ellipse(mouseX, mouseY - 30,60,60);
   // Draw Zoog's eyes
-  fill(0);
+  fill(mouseX, mouseY, mouseX);
 
 
 
